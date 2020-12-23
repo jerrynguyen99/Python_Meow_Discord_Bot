@@ -1,7 +1,9 @@
 # Python_Meow_Discord_Bot
+
 A simple Discord Bot named Meow ^^
 
 # To install requirements
+
 .. code:: sh
 
     # Linux/macOS
