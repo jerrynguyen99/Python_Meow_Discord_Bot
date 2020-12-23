@@ -25,6 +25,15 @@ class Bot(commands.Cog):
     async def change_status(self):
         # Change Status of bot
         await self.client.change_presence(activity=discord.Game(next(self.status)))
+    
+    # stop
+    # Commands
+    @commands.command(aliases=['close','logout','l'])
+    async def leave(self, ctx):
+        await ctx.send('Bái bai')
+        await self.client.close()
+        await self.client.logout()
+        print(f'Meow.')
 
 
 def setup(client):
